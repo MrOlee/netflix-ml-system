@@ -1,4 +1,4 @@
-// backend/server.js
+// backend/server.js - KODE LENGKAP
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
@@ -12,6 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ... (lanjutkan dengan semua kode yang sudah saya berikan sebelumnya)
 // Rate Limiter
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
