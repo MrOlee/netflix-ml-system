@@ -1,1 +1,14 @@
-
+# .gitignore
+node_modules/
+.env
+*.log
+dist/
+build/
+.DS_Store
+*.pyc
+__pycache__/
+coverage/
+.vercel/
+*.db
+*.sqlite
+*.sqlite3
