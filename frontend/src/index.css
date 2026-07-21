@@ -3,34 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-slate-50 text-[#1A365D] font-sans;
-  }
-}
-
-@layer utilities {
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease-out;
-  }
-}
-
+/* Animasi tambahan */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
 }
